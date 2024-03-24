@@ -1,0 +1,38 @@
+p {
+    text-align: center;
+    font-size: 60px;
+}
+
+body{
+    background-color: black ;
+    color: #fff; 
+  }
+  
+
+a {
+    color: #ff4500; /* Orange color */
+    text-decoration: none; /* Remove underline */
+    padding-left:40%;
+    padding-right:30%
+  }
+  
+  /* Visited Link */
+  a:visited {
+    color: #ffa500; /* Orange color for visited links */
+  }
+  
+  /* Hovered Link */
+  a:hover {
+    color: #ff6347; /* Light coral color */
+  }
+
+footer{
+    width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    align-items: center ;
+  }

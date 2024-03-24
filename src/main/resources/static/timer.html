@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Locked In</title>
+            <link rel="stylesheet" href="./css/timer.css">
+            <link rel="icon" type="image/png" href="favicon.jpg">
+	</head>
+	<body>
+		<p id="demo"></p>
+
+		<!-- Adding JavaScript code -->
+		<script>
+			// Converting string to required date format 
+            var date = new Date();
+            console.log(date);
+            var cur = new Date(date.getTime() + (15*60*1001));
+            console.log(cur);
+			// let deadline = new Date(cur)
+			// 				.getTime();
+            let deadline = cur;
+
+			// To call defined fuction every second
+			let x = setInterval(function () {
+				
+				// Getting current time in required format
+				let now = new Date().getTime();
+
+				// Calculating the difference
+				let t = deadline - now;
+
+				// Getting value of days, hours, minutes, seconds
+				
+				let minutes = Math.floor(
+					(t % (1000 * 60 * 60)) / (1000 * 60));
+				let seconds = Math.floor(
+					(t % (1000 * 60)) / 1000);
+
+				// Output the remaining time
+				document.getElementById("demo").innerHTML =
+					minutes + "m " + seconds + "s ";
+
+				// Output for over time
+				if (t < 0) {
+					clearInterval(x);
+					document.getElementById("demo")
+							.innerHTML = "Locked In: Complete!!";
+				}
+			}, 1000);
+		</script>
+	</body>
+    <footer>
+        <a href="menu.html">Back to menu</a>
+      </footer>
+</html>
