@@ -1,0 +1,52 @@
+/* Form Container */
+
+
+body{
+  background-color: black ;
+  color: #fff; 
+}
+
+.form-container {
+    width: 450px;
+    margin: 0 auto;
+  }
+  
+  /* Form Input Fields */
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Submit Button */
+  .form-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Submit Button Hover Effect */
+  .form-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  a {
+    color: #ff4500; /* Orange color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Visited Link */
+  a:visited {
+    color: #ffa500; /* Orange color for visited links */
+  }
+  
+  /* Hovered Link */
+  a:hover {
+    color: #ff6347; /* Light coral color */
+  }
