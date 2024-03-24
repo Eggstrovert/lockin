@@ -39,6 +39,8 @@ body{
   a {
     color: #ff4500; /* Orange color */
     text-decoration: none; /* Remove underline */
+    padding-left: 20%;
+    padding-right:20%
   }
   
   /* Visited Link */
@@ -49,4 +51,15 @@ body{
   /* Hovered Link */
   a:hover {
     color: #ff6347; /* Light coral color */
+  }
+
+  footer{
+    width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    align-items: center ;
   }
